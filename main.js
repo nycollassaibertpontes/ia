@@ -41,4 +41,13 @@ alternativas:[{
 
 
 
-function mostrapergunta(){}
+function mostrapergunta(){
+    if(atual >=perguntas.lenght)
+        {mostraResultado(); 
+            return;
+    }
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    mostraAlternativas();
+}
