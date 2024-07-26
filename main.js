@@ -1,12 +1,44 @@
+const caixaPrincipal = document.querySelector("caixa-principal")
+const caixaPerguntas = document.querySelector("caixa-perguntas")
+const caixaAlternativas = document.querySelector("caixa-alternativas")
+const caixaResultado = document.querySelector("caixa-resultado")
+const textoResultado = document.querySelector("texto-resultado")
+
+
+
+
 const perguntas = [
-    pergunta1{
+    {
 enunciado: "você gosta de bolo?",
-alternativas:[{"sim"}, {"não"}]
+alternativas:[{
+    texto: "sim",
+    afirmacao: "você é uma pessoa normal"
+},
+     {
+        texto: "não",
+        afirmacao: "Você é chato pra carambolas"
+}]
 
 
     },
-    pergunta2{
+    {
+        alternativas:[{
+            enunciado:"você dorme?",
+            texto: "sim",
+            afirmacao: "você é uma pessoa normal"
+        },
+             {
+                texto: "não",
+                afirmacao: "Você é uma anomalia e deve ser eliminado."
+    
+        }]
+        
 
 
     }
 ]
+
+
+
+
+function mostrapergunta(){}
